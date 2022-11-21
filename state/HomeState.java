@@ -11,24 +11,27 @@ public class HomeState implements State {
 
     public String pressHomeButton(){
         tv.setState(tv.getHomeState());
+        return "TV already on the home screen ";
     }
     
     public String pressNetflixButton(){
-        System.out.println("Loading Netflix");
         tv.setState(tv.getNetflixState());
+        return "Loading Netflix";
     }
 
 
     public String pressHuluButton(){
-        System.out.println("Loading Hulu");
         tv.setState(tv.getHuluState());
+        return "Loading Hulu";
     }
 
     public String pressMovieButton(){
         tv.setState(tv.getHomeState());
+        return "";
     }
 
     public String pressTVButton(){
         tv.setState(tv.getHomeState());
+        return "";
     }
 }

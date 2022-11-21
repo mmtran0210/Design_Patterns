@@ -7,9 +7,34 @@ public class TV {
     private State state;
 
 
-public TV(){}
+public TV(){
+    setState(HomeState);
+}
 
+public String pressHomeButton(){
+    setState(HomeState);
+    return "";
+}
 
+public String pressHuluButton(){
+    setState(HuluState);
+    return "";
+}
+
+public String pressMovieButton(){
+    setState(HomeState);
+    return "";
+}
+
+public String pressTVButton(){
+    setState(HomeState);
+    return "";
+}
+
+public String pressNetflixButton(){
+    setState(NetflixState);
+    return "";
+}
 
 public State getNetflixState(){
     return NetflixState;

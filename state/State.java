@@ -1,10 +1,10 @@
 package state;
 
 public interface State {
-    public void pressHomeButton();
-    public void pressHuluButton();
-    public void pressMovieButton();
-    public void pressTVButton();
-    public void pressNetflixButton();
+    public String pressHomeButton();
+    public String pressHuluButton();
+    public String pressMovieButton();
+    public String pressTVButton();
+    public String pressNetflixButton();
     
 }
