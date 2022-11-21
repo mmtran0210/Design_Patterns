@@ -29,15 +29,14 @@ public class NetflixState implements State {
     }
 
     public String pressMovieButton(){
-
-            return ": "+movies;
+        tv.setState(tv.getNetflixState());
+            return "Netflix Movies: \n1. The Land Before Time\n2. Frozen\n3. The Little Mermaid\n4. Ice Age";
        }
         
-
-
-
     public String pressTVButton(){
-        return ""+tvShows;
+        tv.setState(tv.getNetflixState());
+        return "Netflix Shows: \n1. Peppa Pig\n2. My little Pony\n3. Garfield\n4. Teenage Mutant Ninja Turtle";
+
     }
 }
 

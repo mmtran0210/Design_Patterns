@@ -6,7 +6,7 @@ public class HomeState implements State {
 
 
     public HomeState(TV tv){
-        this.tv = tv;
+       this.tv = tv;
     }
 
     public String pressHomeButton(){

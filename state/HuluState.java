@@ -24,14 +24,16 @@ public class HuluState implements State {
 
     public String pressHuluButton(){
         tv.setState(tv.getHuluState());
-        return "";
+        return "Already on Hulu";
     }
 
     public String pressMovieButton(){
-        return ""+movies;
+        tv.setState(tv.getHuluState());
+        return "Hulu Movies: \n1. Cars\n2. Cinderella\n3. Wall-E\n4. ET";
     }
 
     public String pressTVButton(){
-        return ""+tvShows;
+        tv.setState(tv.getHuluState());
+        return "Hulu Shows: \n1. sesama street\n2. care bears\n3. lone tune";
 }
 }
