@@ -3,31 +3,32 @@ import java.util.ArrayList;
 
 public class Cassett implements AnalogAlbum {
     
-    ArrayList<String> songs = new ArrayList<>();
+    private ArrayList<String> songs = new ArrayList<>();
     
-    private int currentIndex;
+    private static int currentIndex;
     
     public Cassett(ArrayList<String> songs){
-        
+        this.songs = songs;
     }
     
     public String play(){
-        return ".";
+        return "Playing song "+ (currentIndex+1) +": "+ songs.get(currentIndex++);
     }
 
     public String rewind(){
-        return ".";
+        return "Rewinding to song " + (currentIndex--);
+        
     }
 
     public String ffwd(){
-        return ".";
+        return "Forward to song "+ (currentIndex++);
     }
 
     public String pause(){
-        return ".";
+        return "Pausing";
     }
 
     public String stopEject(){
-        return ".";
+        return "Stop cassette and ejecting";
     }
 }

@@ -5,26 +5,26 @@ public class AnalogAdapter implements AnalogAlbum {
     private DigitalAlbum album;
 
     public AnalogAdapter(DigitalAlbum album){
-
+        this.album = album;
     }
 
     public String play(){
-        return ".";
+        return album.playSong(0);
     }
 
     public String rewind(){
-        return ".";
+        return album.prevSong();
     }
 
     public String ffwd(){
-        return ".";
+        return album.nextSong();
     }
 
     public String pause(){
-        return ".";
+        return "Pausing";
     }
 
     public String stopEject(){
-        return ".";
+        return "Stop cassette and ejecting";
     }
 }
